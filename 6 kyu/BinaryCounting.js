@@ -4,12 +4,14 @@ Example: The binary representation of 1234 is 10011010010, so the function shoul
 */
 
 const countBits = (x) => {
-  // convert to binary
+  // convert input to binary
   const Binary = x.toString(2);
+  console.log(`the binary for ${x} is ${Binary}`);
   //   convert Binary to a number array
   const arr = Array.from(String(Binary), Number);
   // return number of 1s in the array
-  return arr.filter((item) => item === 1).length;
+  const numberOfOnes = arr.filter((item) => item === 1).length;
+  return `there are ${numberOfOnes} ones`;
 };
 
 const result = countBits(1234);
