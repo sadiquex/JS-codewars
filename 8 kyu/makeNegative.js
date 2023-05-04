@@ -11,3 +11,5 @@ function makeNegative(num) {
 }
 
 console.log(makeNegative(5));
+
+// make a negative number
