@@ -7,7 +7,8 @@ Example(Input => Output):
 */
 
 function digitize(n) {
-  return Array.from(String(n), Number).reverse();
+  // return Array.from(String(n), Number).reverse();
+  return n.split("").reverse().join("");
 }
 
 console.log(digitize(35231));

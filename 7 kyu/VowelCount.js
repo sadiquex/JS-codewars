@@ -8,7 +8,7 @@ function getCount(str) {
   const vowels = ["a", "e", "i", "o", "u"];
   let count = 0;
 
-  Array.from(str, String).forEach((el) => {
+  str.split("").forEach((el) => {
     // if vowels array contains letter in that iteration
     if (vowels.includes(el)) {
       count++;

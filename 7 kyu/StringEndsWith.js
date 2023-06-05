@@ -9,8 +9,10 @@ solution('abc', 'bc') // returns true
 solution('abc', 'd') // returns false
 */
 function solution(str, ending) {
-  const strArray = Array.from(str);
-  const endingArray = Array.from(ending);
+  // const strArray = Array.from(str);
+  const strArray = str.split("");
+  // const endingArray = Array.from(ending);
+  const endingArray = ending.split("");
   //   if last element in string === last element in ending, return true
   const strLast = strArray[strArray.length - 1];
   const endLast = endingArray[endingArray.length - 1];
